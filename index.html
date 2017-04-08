@@ -9,11 +9,46 @@
   </head>
   <body style="background-color: green">
     <div id="banner"> 
-       <h1 class="BannerHeader">Welcome to the Home Page!!!</h1>
+    <img src="EugeneImage.png">
+       <h1 class="BannerHeader">Welcome to the Home Page!!!</h1> 
        <button class ="Button" onclick="parent.location='upVoting.html'">Up Voting Page</button>
        <button class ="Button" onclick="parent.location='contactInfo.html'">Gov Contact Info</button>
        <button class ="Button" onclick="parent.location='otherPage.html'">Other Page</button>
        <button class ="Button" onclick="parent.location='index.html'">Home Page</button>
+    </div>
+
+    <br>
+    <br>
+    <!-- Weather Checker -->
+    <div>
+    	<h3>Weather Checker</h3>
+	    <form>
+	      <fieldset>
+	        <legend>Enter Zip Code</legend>
+	        <label for="zip"></label>
+	        <input type="text" name="zip" id="zip">
+	        <input type="submit" id="zipSubmit">
+	        <br><br>
+	      	<legend>OR</legend>
+	      	<br>
+	        <legend>Enter City Name</legend>
+	        <label for="city"></label>
+	        <input type="text" name="zip" id="city">
+	        <input type="submit" id="citySubmit">
+	      </fieldset>
+	    </form>
+    </div>
+
+
+  	<!--Result DIV -->
+  	<div>
+      <h2>Local Weather</h2>
+      <ul>
+        <li><span><strong>City:</strong> </span><span id="DisplayCity"></span></li>
+        <li><span><strong>Current Temp in Fahrenheit:</strong> </span><span id="CurTemp"></span></li>
+        <li><span><strong>Current Weather Conditions:</strong> </span><span id="CurWeather"></span></li>
+        <li><span><strong>Wind Speed in mph:</strong> </span><span id="WindSpeed"></span></li>
+      </ul>
     </div>
     
 
