@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+      <title>Eugene Civic Engagment</title>
+      <link rel="stylesheet" href=style.css" type="text.css">
+  </head>
+  <body style="background-color:gray">
+    <div id="container">
+      <div id="banner">
+        <h1 class="BannerHeader">Contact Information!</h1>
+            <button class ="Button" onclick="parent.location='index.html'">Home Page</button>
+            <button class ="Button" onclick="parent.location='upVoting.html'">Up Voting Page</button>
+            <button class ="Button" onclick="parent.location='contactInfo.html'">Gov Contact Info</button>
+            <button class ="Button" onclick="parent.location='otherPage.html'">Other Page</button>
+      </div>
+      <script src="buttons.js"></script> 
+      <div id="content">
+            <div id="nav">
+              <iframe src="https://calendar.google.com/calendar/embed?src=b365lnj6qvur35p5b2egmuqips%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div id="main">
+              <h2> Contact us! </h2>
+                <p> Don't know your ward? <a href="https://www.eugene-or.gov/DocumentCenter/View/15179"> Find out here.</a> </p>
+            </div>
+      </div>
+      <div id="footer">
+        Copyright &copy; 2017 Jose Camarillo
+      </div>
+    </div>
+  </body>
+</html>
