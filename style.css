@@ -1,0 +1,33 @@
+body{
+	background-color: #007bff
+}
+
+#container{
+	background-color: #FFC;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#banner{
+	background-color: #FFC;
+	color: #007bff;
+}
+
+#content{
+	padding: 1.25%;
+}
+
+#nav{
+	width: 22.5%;
+	float: left;
+}
+
+#main{
+	width: 75%;
+	float: right;
+}
+
+#footer{
+	clear: both;
+}
