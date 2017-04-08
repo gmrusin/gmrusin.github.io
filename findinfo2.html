@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Eugene Civic Engagment</title>
+    <link rel="stylesheet" href=style.css" type="text.css">
+  </head>
+  <body style="background-color: green">
+    <div id="banner"> 
+    <img src="EugeneImage.png">
+       <h1 class="BannerHeader">Welcome to the Home Page!!!</h1> 
+       <button class ="Button" onclick="parent.location='upVoting.html'">Up Voting Page</button>
+       <button class ="Button" onclick="parent.location='contactInfo.html'">Gov Contact Info</button>
+       <button class ="Button" onclick="parent.location='otherPage.html'">Other Page</button>
+       <button class ="Button" onclick="parent.location='index.html'">Home Page</button>
+    </div>
+    <style>
+button.accordion {
+    background-color: green;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd; 
+}
+
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: #006400;
+}
+</style>
+</head>
+<body>
+
+<h2>Accordion</h2>
+
+<button class="accordion">Ward 1</button>
+<div class="panel">
+  <p>Ward 1 Description</p>
+</div>
+
+<button class="accordion">Ward 2</button>
+<div class="panel">
+  <p>Ward 2 Description</p>
+</div>
+
+<button class="accordion">Ward 3</button>
+<div class="panel">
+  <p>Ward 3 Description</p>
+</div>
+
+<button class="accordion">Ward 4</button>
+<div class="panel">
+  <p>Ward 4 Description</p>
+</div>
+
+<button class="accordion">Ward 5</button>
+<div class="panel">
+  <p>Ward 5 Description</p>
+</div>
+
+<button class="accordion">Ward 6</button>
+<div class="panel">
+  <p>Ward 6 Description</p>
+</div>
+
+<button class="accordion">Ward 7</button>
+<div class="panel">
+  <p>Ward 7 Description.</p>
+</div>
+
+<button class="accordion">Ward 8</button>
+<div class="panel">
+  <p>Ward 8 Description</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
+
